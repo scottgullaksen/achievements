@@ -1,14 +1,11 @@
 # achievements
 A general java implementation of achievements which can be used in games
 
-# Implementation: Code description/usage
-For a description on why we have achievements in the game and how they are intended to work, see #221.
-
 ## A UML Overview for the implementation
-![AchievementUML](uploads/0fc1265077e912b8d79a71df272abf75/AchievementUML.png)
+<img width="707" alt="AchievementUML" src="https://user-images.githubusercontent.com/25436721/67647305-95257900-f97d-11e9-8fa8-a64b6198ac94.png">
 
 ### The achievement class
-Implements the java.util.Observer interface. This is because we recognized the possibility of using the Oberver-observed design pattern when using achievements and stats. Achievements should be able to keep track of and update themselves whenever changes on relevant stats are made(i.e. they observe). This also fully encapsulates achievement objects. 
+Implements the java.util.Observer interface. This is because I recognized the possibility of using the Oberver-observed design pattern when using achievements and stats. Achievements should be able to keep track of and update themselves whenever changes on relevant stats are made(i.e. they observe). This also fully encapsulates achievement objects. 
 
 It has a set of constraints (objects) that it is initialized with. These are used to access relevant stats to set itself as an observer and to measure if constraints (rules) are satisfied.
 
